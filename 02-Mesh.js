@@ -21,6 +21,7 @@ function init() {
   //将轴线添加到场景中
   scene.add(axes);
 
+  //======================== main ==========================
   //创建平面
   //定义平面的大小
   let planeGeometry = new THREE.PlaneGeometry(40, 40);
@@ -60,6 +61,7 @@ function init() {
   let sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
   sphere.position.set(-15, 5, 5);
   scene.add(sphere);
+  //======================== main ==========================
 
   //设置相机位置(x,y,z)
   camera.position.set(-50, 50, 50);
@@ -69,16 +71,4 @@ function init() {
   document.getElementById("webgl-output").appendChild(renderer.domElement);
   //使用指定的摄像机来渲染场景
   renderer.render(scene, camera);
-
-  //======================== main ==========================
-  const animate = function () {
-    requestAnimationFrame(animate);
-    cube.rotation.x += 0.01;
-    sphere.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-    sphere.rotation.y += 0.01;
-    renderer.render(scene, camera);
-  };
-  animate();
-  //======================== main ==========================
 }

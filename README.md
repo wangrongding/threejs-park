@@ -1,4 +1,4 @@
-# 教练 ! 我要学 three.js 🔥
+# 教练！我想学 three.js 🔥
 
 ok,想要了解 threejs 的 3d 效果，先了解这几个概念
 
@@ -115,6 +115,10 @@ let sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 sphere.position.set(-15, 5, 5);
 scene.add(sphere);
 ```
+
+## 动画
+
+...持续更新中
 
 ## 光源（Light）
 
